@@ -1,2 +1,7 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>fP", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>fE", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>fF", 
+    function()
+        require('fzf-lua').files()
+    end
+)
