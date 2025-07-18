@@ -5,3 +5,4 @@ vim.keymap.set("n", "<leader>fF",
         require('fzf-lua').files()
     end
 )
+vim.keymap.set("n", "<leader><leader>", vim.cmd.noh)
